@@ -1,0 +1,586 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% -*- coding: UTF-8; -*-
+% vim: set fenc=utf-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% See "README.md" for instructions on compiling this document.
+\documentclass[letterpaper,MMMyyyy,nonstopmode]{simpleresumecv}
+% Class options:
+% a4paper, letterpaper, nonstopmode, draftmode
+% MMMyyyy, ddMMMyyyy, MMMMyyyy, ddMMMMyyyy, yyyyMMdd, yyyyMM, yyyy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{verbatim}
+\usepackage{hyperref}
+\usepackage{multicol}
+\setlength{\multicolsep}{3.0pt plus 0.0pt minus 1.5pt}% 50% of original values
+% CV Info (to be customized).
+\newcommand{\CVAuthor}{Brendon Forsgren}
+\newcommand{\CVTitle}{Brendon Forsgren's Resume}
+\newcommand{\CVNote}{CV compiled on {\today}}
+%\newcommand{\CVWebpage}{http://www.example.com/~johndoe}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={\CVAuthor},
+%pdfsubject={\CVWebpage},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+unicode=true,
+bookmarks=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+% hidelinks,
+colorlinks=true,
+urlcolor=blue,
+breaklinks}
+
+% Shorthand.
+\newcommand{\Code}[1]{\mbox{\textbf{#1}}}
+\newcommand{\CodeCommand}[1]{\mbox{\textbf{\textbackslash{#1}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\Title{\CVAuthor}
+
+\begin{SubTitle}
+\href{https://www.google.com/maps/place/284+N+200+E,+Provo,+UT+84606/@40.2374075,-111.6570124,17z/data=!3m1!4b1!4m5!3m4!1s0x874d90ad5ca6737b:0x40fa75f190bd262a!8m2!3d40.2374075!4d-111.6548237}
+% {284 North 200 East Apt 5, Provo, Utah 84606, USA}
+{345 Okaloosa Road NE, Fort Walton Beach, Florida 32548, USA}
+\par
+\href{mailto:bforsgren29@gmail.com}
+{bforsgren29@gmail.com}
+\,\SubBulletSymbol\,
++1\,(585)\,315-3979
+\,\SubBulletSymbol\,
+\par 
+\href{https://www.linkedin.com/in/brendon-forsgren-b68373128}
+{LinkedIn Profile}
+% \href{https://www.linkedin.com/in/brendon-forsgren-b68373128}{https://www.linkedin.com/in/brendon-forsgren-b68373128}
+% {LinkedIn Profile}
+%{\url{\CVWebpage}}
+\end{SubTitle}
+
+\begin{Body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\Section
+{Education}
+{Education}
+{PDF:Education}
+
+\Entry
+{\textbf{Brigham Young University}},
+Provo, Utah, USA
+
+\Gap
+\BulletItem
+PhD candidate in Mechanical Engineering (5th year)
+\hfill
+% \DatestampYMD{2018}{4}{15} --
+% \DatestampYMD{2023}{04}{15}
+Expected \DatestampYMD{2023}{08}{15}
+\begin{Detail}
+\SubBulletItem
+Graduate GPA: 3.93/4.0
+% \SubBulletItem
+% ORCID ID: 0000-0003-0440-2608
+\end{Detail}
+
+\BulletItem
+B.S. in Mechanical Engineering
+\hfill
+% \DatestampYMD{2012}{8}{15} --
+\DatestampYMD{2018}{04}{15}
+\begin{Detail}
+\SubBulletItem
+Cumulative GPA: 3.86/4.0
+\end{Detail}
+
+% \BulletItem 
+% Graduate Coursework
+% \begin{multicols}{3}
+% \begin{flushleft}
+% \begin{Detail}
+% \SubBulletItem
+% Autonomous Systems
+% \SubBulletItem
+% Mathematics of Signals and Systems
+% \SubBulletItem
+% Stochastic Processes
+% \SubBulletItem
+% Robotic Vision
+% \SubBulletItem
+% Optimization Techniques
+% \SubBulletItem
+% Linear System Theory
+% \SubBulletItem
+% Nonlinear System Theory
+% \SubBulletItem
+% CAE Software Development
+% \SubBulletItem
+% Deep Learning
+% \SubBulletItem
+% Flight Dynamics and Controls
+% \end{Detail}
+% \end{flushleft}
+% \end{multicols}
+
+% \BulletItem
+% Technical Electives
+% \begin{Detail}
+% \SubBulletItem
+% Kinematics
+% \SubBulletItem
+% Design of Control Systems (Currently Enrolled)
+%\SubBulletItem
+%Compliant Mechanisms (Currently Enrolled)
+% \end{Detail}
+
+% \BulletItem
+% Applying for a Masters/PhD Program
+% \begin{Detail}
+% \SubBulletItem
+% Strong interest in Robotics
+% \SubBulletItem
+% GRE Scores: Quantitative: 167 ($93^{rd}$ percentile),   Verbal Reasoning: 164 ($94^{th}$ percentile)
+% \end{Detail}
+
+% \BulletItem
+% Relevant Coursework
+% \begin{Detail}
+% \SubBulletItem
+% Design of Control Systems
+% \SubBulletItem
+% Design of Mechatronic Systems
+% \end{Detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% WORK EXPERIENCE %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Experience}
+{Experience}
+{PDF:WorkExperience}
+
+\Entry
+\textbf{Brigham Young University},
+Provo, Utah, USA
+
+\Gap
+\BulletItem
+Graduate Research Assistant, BYU MAGICC Lab
+\hfill 
+\DatestampYMD{2018}{04}{30}--
+Present
+\begin{Detail}
+\SubBulletItem
+Research in cooperative GPS-denied navigation
+\SubBulletItem
+Robust outlier detection in high outlier regimes
+\SubBulletItem 
+Robust pose graph optimization techniques
+\end{Detail}
+
+\Entry
+\textbf{Air Force Research Laboratory, Munitions Directorate},
+Eglin Air Force Base, FL
+
+\Gap 
+\BulletItem 
+NSF-AFRL Graduate Research Intern
+\hfill 
+\DatestampYM{2022}{10} --
+Present
+\begin{Detail}
+\SubBulletItem
+Implementing a MSCKF for accurate GPS-denied navigation of high flying vehicles
+\SubBulletItem 
+Team lead role in preparation for real-time flight test of MSCKF
+\SubBulletItem
+Developing a novel cooperative navigation framework
+\end{Detail}
+
+\Gap
+\BulletItem
+AFRL Scholars Intern, Secret Security Clearance
+\hfill 
+\DatestampYM{2021}{06}--
+\DatestampYM{2021}{08}
+\begin{Detail}
+\SubBulletItem
+Implemented a cooperative pose graph optimization algorithm 
+\SubBulletItem
+Demonstrated cooperative pose graph optimization algorithm in a real-time hardware demonstration
+% \SubBulletItem 
+% Relative Pose Estimation
+\end{Detail}
+
+
+\Gap
+\Entry
+\textbf{Near Earth Autonomy},
+Pittsburgh, PA, USA
+
+\Gap
+\BulletItem
+Robotics Engineering Intern
+\hfill
+\DatestampYMD{2019}{05}{1} --
+\DatestampYMD{2019}{08}{15}
+\begin{Detail}
+\SubBulletItem
+IMU evaluation for GPS enabled missions
+\SubBulletItem
+Integrated external IMU system with existing hardware in several autonomous flights
+\SubBulletItem
+Evaluation of IMU noise characteristics
+\SubBulletItem
+Wrote post processing scripts to evaluate performance
+\end{Detail}
+
+
+% \Gap
+% \Entry 
+% \href{http://www.example.com/my-institute}
+% {\textbf{Brigham Young University}},
+% Provo, Utah, USA
+% \begingroup
+% \BulletItem
+% Research Assistant, BYU CAD Lab
+% \hfill
+% \DatestampYMD{2017}{02}{15} --
+% \DatestampYMD{2018}{04}{30}
+% \begin{Detail}
+% \SubBulletItem
+% Create a ray-tracing algorithm to simplify complex 3D assemblies in CATIA
+% \SubBulletItem
+% Develop an algorithm to compute the swept volume of a mechanism
+% \SubBulletItem
+% Automate the creation of an airplane rib in multiple CAD programs
+% % \SubBulletItem
+% % Conducting a Literature Review in preparation to publish an Academic Paper
+% \end{Detail}
+
+% \Gap
+% \BulletItem
+% Product Design Engineer, BYU Capstone
+% \hfill
+% \DatestampYMD{2017}{09}{15} --
+% \DatestampYMD{2018}{04}{30}
+% \begin{Detail}
+% \SubBulletItem
+% Design a device to monitor the ingress of saline solution into neighboring tissue during arthroscopic surgery
+% \SubBulletItem
+% Design a test fixture to validate the accuracy of the measurement device
+% \SubBulletItem
+% Perform experiments and analyze test results to improve the design 
+% \end{Detail}
+
+% \Gap
+% \BulletItem
+% Research Assistant, Department of Mechanical Engineering
+% \hfill
+% \DatestampYMD{2018}{01}{15} --
+% Present
+% \begin{Detail}
+% \SubBulletItem
+% Research previously implemented robot coverage algorithms.
+% \SubBulletItem
+% Implement a multi-robot coverage algorithm for comparison with a novel algorithm.
+% \end{Detail}
+
+
+% \Gap
+% \Entry
+% \href{http://www.example.com/my-institute}
+% {\textbf{EISCO Labs}},
+% Rochester, New York, USA
+
+% \Gap
+% \BulletItem
+% Product Design Engineer
+% \hfill
+% \DatestampYMD{2017}{02}{15} --
+% \DatestampYMD{2018}{01}{01}
+% \begin{Detail}
+% \SubBulletItem
+% Develop ideas for games to teach about physics and math
+% \SubBulletItem
+% Designing CAD models of games for manufacturing
+% \end{Detail}
+
+% \Gap
+% \Entry
+% \href{http://www.example.com/my-institute}
+% {\textbf{Brigham Young University}},
+% Provo, Utah , USA
+
+% % \Gap
+% % \BulletItem
+% % Teaching Assistant, Scientific Computing and CAE
+% % \hfill
+% % \DatestampYMD{2016}{08}{15} --
+% % \DatestampYMD{2017}{06}{15}
+% % \begin{Detail}
+% % \SubBulletItem
+% % Taught lab sessions to groups of 20 students 3 times a week
+% % \SubBulletItem
+% % Helped students develop solutions to open ended programming problems in C++ and MatLab
+% % \end{Detail}
+
+% \Gap
+% \BulletItem
+% Teaching Assistant, Design of Control Systems
+% \hfill
+% \DatestampYMD{2018}{01}{09} -- \DatestampYMD{2018}{04}{27}
+% \begin{Detail}
+% \SubBulletItem
+% Helped students debug PID controllers for simulated and physical systems.
+
+% \end{Detail}
+
+
+
+% \begin{comment}
+% %%%%%%%%%%%%%%%%%%
+% %% PUBLICATIONS %%
+% %%%%%%%%%%%%%%%%%%
+
+% \Section
+% {Publications}
+% {Publications}
+% {PDF:Publications}
+
+% \SubSection
+% {Journals}
+% {Journals}
+% {PDF:Journals}
+
+% % Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
+% \begingroup
+% \renewcommand{\MaxNumberedItem}{[88]}
+
+% \Gap
+% \NumberedItem{[10]}
+% \href{http://www.example.com/my-paper-doi-5}
+% {\underline{J.~Doe}, J.~Citizen, and A.~Yone,
+% ``On lasers and climate change,''
+% \textit{Journal of Science},
+% vol.~89,
+% no.~2,
+% pp.~4123--4133,
+% \DatestampYM{2008}{02}.}
+
+% \endgroup
+
+% \BigGap
+% \SubSection
+% {Conferences}
+% {Conferences}
+% {PDF:Conferences}
+
+% % Declare a new group to limit the scope of \MaxNumberedItem to this subsection.
+% \begingroup
+% \renewcommand{\MaxNumberedItem}{[8888]}
+
+% \Gap
+% \NumberedItem{[1000]}
+% \href{http://www.example.com/my-paper-doi-3}
+% {\underline{J.~Doe}, J.~Citizen, and A.~Yone,
+% ``On lasers and climate change,''
+% in \textit{Proceedings of the Laser Symposium},
+% Las Vegas, Nevada, USA,
+% \DatestampYM{2007}{01}.}
+
+% \endgroup
+% \end{comment}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Section
+{Skills}
+{Skills}
+{PDF:Skills}
+
+\Entry
+{\textbf{Computer Programming}}
+\Gap
+\BulletItem
+Languages: C++, Python, Matlab
+\BulletItem 
+Familiarity with OpenCV, ROS, and Eigen libraries
+% \BulletItem
+% Event driven programming in C %should I talk about mechatronics project
+
+
+\Gap 
+\Entry 
+{\textbf{Computer Vision}}
+\Gap 
+\BulletItem
+Used stereo vision to track and catch a baseball traveling at  40mph
+\BulletItem
+Implemented a tightly-coupled visual inertial odometry algorithm
+\BulletItem 
+Demonstrated a lane following algorithm on a small scale self-driving car
+\BulletItem 
+Developed optical flow and visual servoing controllers on a quadrotor in simulation
+
+\Gap 
+\Entry 
+{\textbf{State Estimation}}
+\Gap 
+\BulletItem 
+Familiar with Kalman filters, Particle filter, and SLAM algorithms
+\BulletItem
+Familiarity with factor graphs
+\BulletItem 
+Implemented a Moving Horizon Estimator in real time on Turtlebot data
+\BulletItem 
+Familiarity with Ceres and GTSAM software libraries
+\BulletItem 
+Developed a UAV flight simulator in ROS using Python and C++
+
+% \Gap 
+% \Entry{\textbf{Control and Path Planning}}
+% \Gap
+% \BulletItem 
+% Familiar with PID, loop shaping, state space, MPC and LQR controllers
+% \BulletItem 
+% Implemented PID and state space controllers on hardware
+% % \BulletItem 
+%     % PID, Loop shaping, and State Space controllers on multiple systems in simulation and hardware
+% % \BulletItem 
+%     % Implemented Model Predictive Control and LQR control on a multirotor UAV in simulation
+% \BulletItem 
+%     Implemented RRT and Differential Flatness based path planners
+% % \BulletItem 
+%     % Implemented a spanning tree path planning algorithm for robot coverage of an unknown space
+    
+% \Gap 
+% \Entry{\textbf{Deep Learning}}
+% \Gap 
+% \BulletItem 
+%     Using and training Convolutional, Recurrent and GAN neural networks
+% \BulletItem 
+%     Training an RNN to estimate wind speed from a UAV
+    
+
+% \Gap
+% \Entry{\textbf{Mechatronics}}
+% \Gap
+% \BulletItem
+% Created an autonomous robot with a Pic24 microcontroller and a variety of sensors
+% \BulletItem
+% Created a  mobile robotic arm with an Arduino and Raspberry Pi
+% % \BulletItem
+% % Familiarity with ROS
+
+
+% \Gap
+% \Entry{\textbf{3D Modeling}}
+
+% \Gap
+% \BulletItem
+% Designed Murlin's Trebuchet, Trammel of Archimedes and a Compressed Air Engine
+% \BulletItem
+% CATIA, SolidWorks, Fusion 360
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Volunteer %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \Section
+% {Volunteer Experience}
+% {Volunteer Experience}
+% {PDF:VolunteerExpeerience}
+
+% \Gap
+% \Entry
+% \textbf{The Church of Jesus Christ of Latter Day Saints},
+% Cuiaba, Brazil
+
+% \Gap
+% \BulletItem
+% Full Time Volunteer Missionary: Portuguese Speaking
+% \hfill
+% \DatestampYMD{2013}{07}{15}--
+% \DatestampYMD{2015}{06}{15}
+% \begin{Detail}
+% \SubBulletItem
+% Developed strong communication skills with people from various cultures
+% \SubBulletItem
+% Gave weekly training in goal setting and time management to groups of 20 missionaries
+% \end{Detail}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% AWARDS & SCHOLARSHIPS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \Section
+% {Awards \&\newline
+% Scholarships}
+% {Awards \& Scholarships}
+% {PDF:AwardsAndScholarships}
+
+% \Entry
+% \textbf{Half Tuition Scholarship}
+% \hfill
+% \DatestampYM{2012}{08} --
+% Present
+
+% \Gap
+% \Entry
+% \textbf{Eagle Scout}
+% \hfill
+% \DatestampYMD{2012}{05}{15}
+
+\Section
+{Publications}
+{Publications}
+{PDF:Publications}
+
+\BulletItem
+\textit{Direct Relative Edge Optimization, a Robust Alternative for Pose Graph Optimization}, IEEE Robotics and Automation Letters, 2019
+\BulletItem \textit{Group-$k$ Consistent Measurement Set Maximization for Robust Outlier Detection}, IEEE IROS 2022
+\BulletItem \textit{Incremental cycle bases for cycle-based pose graph optimization}, IEEE Robotics and Automation Letters, 2023
+
+
+\end{Body}
+
+\thispagestyle{empty}
+\end{document}
