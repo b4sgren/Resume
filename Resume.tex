@@ -20,6 +20,8 @@
 %% PREAMBLE.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% COMPILE WITH XELATEX: xelatex Resume.tex
+
 \usepackage{verbatim}
 \usepackage{hyperref}
 \usepackage{multicol}
@@ -66,10 +68,11 @@ breaklinks}
 \Title{\CVAuthor}
 
 \begin{SubTitle}
-\href{https://www.google.com/maps/place/284+N+200+E,+Provo,+UT+84606/@40.2374075,-111.6570124,17z/data=!3m1!4b1!4m5!3m4!1s0x874d90ad5ca6737b:0x40fa75f190bd262a!8m2!3d40.2374075!4d-111.6548237}
+% \href{https://www.google.com/maps/place/284+N+200+E,+Provo,+UT+84606/@40.2374075,-111.6570124,17z/data=!3m1!4b1!4m5!3m4!1s0x874d90ad5ca6737b:0x40fa75f190bd262a!8m2!3d40.2374075!4d-111.6548237}
 % {284 North 200 East Apt 5, Provo, Utah 84606, USA}
-{345 Okaloosa Road NE, Fort Walton Beach, Florida 32548, USA}
-\par
+% {345 Okaloosa Road NE, Fort Walton Beach, Florida 32548, USA}
+% {1104 Shady Oak Ct, Bedford, Texas 76021, USA}
+% \par
 \href{mailto:bforsgren29@gmail.com}
 {bforsgren29@gmail.com}
 \,\SubBulletSymbol\,
@@ -104,7 +107,7 @@ PhD candidate in Mechanical Engineering (5th year)
 \hfill
 % \DatestampYMD{2018}{4}{15} --
 % \DatestampYMD{2023}{04}{15}
-Expected \DatestampYMD{2023}{08}{15}
+\DatestampYMD{2023}{08}{15}
 \begin{Detail}
 \SubBulletItem
 Graduate GPA: 3.93/4.0
@@ -161,6 +164,25 @@ Flight Dynamics and Controls
 {PDF:WorkExperience}
 
 \Entry
+\textbf{VectorNav Technologies},
+Dallas, Texas, USA
+
+\Gap
+\BulletItem
+Navigation Engineer
+\hfill
+\DatestampYMD{2023}{09}{04}--Present
+\begin{Detail}
+\SubBulletItem
+Developed an EKF for airspeed-aided inertial navigation in GPS-denied environments
+\SubBulletItem
+Implemented a forward-backward smoother to generate a truth reference used to evaluate INS performance in GPS-denied/degraded environments
+\SubBulletItem
+Ported a Hard/Soft Iron calibration routine from C to modern C++
+
+\end{Detail}
+
+\Entry
 \textbf{Brigham Young University},
 Provo, Utah, USA
 
@@ -168,13 +190,12 @@ Provo, Utah, USA
 \BulletItem
 Graduate Research Assistant, BYU MAGICC Lab
 \hfill
-\DatestampYMD{2018}{04}{30}--
-Present
+\DatestampYMD{2018}{04}{30}--\DatestampYMD{2023}{08}{15}
 \begin{Detail}
 \SubBulletItem
 Research in cooperative GPS-denied navigation
 \SubBulletItem
-Robust outlier detection in high outlier regimes
+Robust outlier detection in high outlier regimes for multi-agent SLAM
 \SubBulletItem
 Robust pose graph optimization techniques
 \end{Detail}
@@ -187,15 +208,14 @@ Eglin Air Force Base, FL
 \BulletItem
 NSF-AFRL Graduate Research Intern
 \hfill
-\DatestampYM{2022}{10} --
-Present
+\DatestampYM{2022}{10}--\DatestampYM{2023}{04}
 \begin{Detail}
 \SubBulletItem
-Implementing a MSCKF for accurate GPS-denied navigation of high flying vehicles
+Implemented a MSCKF for accurate GPS-denied navigation of high flying vehicles
 \SubBulletItem
 Team lead role in preparation for real-time flight test of MSCKF
 \SubBulletItem
-Developing a novel cooperative navigation framework
+Developing a novel cooperative navigation framework that scales with the number of vehicles and requires low communication bandwidth
 \end{Detail}
 
 \Gap
@@ -259,21 +279,6 @@ Wrote post processing scripts to evaluate performance
 
 % \Gap
 % \BulletItem
-% Product Design Engineer, BYU Capstone
-% \hfill
-% \DatestampYMD{2017}{09}{15} --
-% \DatestampYMD{2018}{04}{30}
-% \begin{Detail}
-% \SubBulletItem
-% Design a device to monitor the ingress of saline solution into neighboring tissue during arthroscopic surgery
-% \SubBulletItem
-% Design a test fixture to validate the accuracy of the measurement device
-% \SubBulletItem
-% Perform experiments and analyze test results to improve the design
-% \end{Detail}
-
-% \Gap
-% \BulletItem
 % Research Assistant, Department of Mechanical Engineering
 % \hfill
 % \DatestampYMD{2018}{01}{15} --
@@ -284,58 +289,6 @@ Wrote post processing scripts to evaluate performance
 % \SubBulletItem
 % Implement a multi-robot coverage algorithm for comparison with a novel algorithm.
 % \end{Detail}
-
-
-% \Gap
-% \Entry
-% \href{http://www.example.com/my-institute}
-% {\textbf{EISCO Labs}},
-% Rochester, New York, USA
-
-% \Gap
-% \BulletItem
-% Product Design Engineer
-% \hfill
-% \DatestampYMD{2017}{02}{15} --
-% \DatestampYMD{2018}{01}{01}
-% \begin{Detail}
-% \SubBulletItem
-% Develop ideas for games to teach about physics and math
-% \SubBulletItem
-% Designing CAD models of games for manufacturing
-% \end{Detail}
-
-% \Gap
-% \Entry
-% \href{http://www.example.com/my-institute}
-% {\textbf{Brigham Young University}},
-% Provo, Utah , USA
-
-% % \Gap
-% % \BulletItem
-% % Teaching Assistant, Scientific Computing and CAE
-% % \hfill
-% % \DatestampYMD{2016}{08}{15} --
-% % \DatestampYMD{2017}{06}{15}
-% % \begin{Detail}
-% % \SubBulletItem
-% % Taught lab sessions to groups of 20 students 3 times a week
-% % \SubBulletItem
-% % Helped students develop solutions to open ended programming problems in C++ and MatLab
-% % \end{Detail}
-
-% \Gap
-% \BulletItem
-% Teaching Assistant, Design of Control Systems
-% \hfill
-% \DatestampYMD{2018}{01}{09} -- \DatestampYMD{2018}{04}{27}
-% \begin{Detail}
-% \SubBulletItem
-% Helped students debug PID controllers for simulated and physical systems.
-
-% \end{Detail}
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% SKILLS %%
@@ -364,7 +317,7 @@ Event driven programming in C %should I talk about mechatronics project
 \BulletItem
 Used stereo vision to track and catch a baseball traveling at  40mph
 \BulletItem
-Implemented a tightly-coupled visual inertial odometry algorithm
+Implemented a tightly-coupled visual-inertial odometry algorithm
 \BulletItem
 Demonstrated a lane following algorithm on a small scale self-driving car
 \BulletItem
@@ -377,13 +330,26 @@ Developed optical flow and visual servoing controllers on a quadrotor in simulat
 \BulletItem
 Familiar with Kalman filters, Particle filter, and SLAM algorithms
 \BulletItem
-Familiarity with factor graphs
+Familiarity with factor graphs and non-linear optimization techniques over Lie Groups
 \BulletItem
 Implemented a Moving Horizon Estimator in real time on Turtlebot data
 \BulletItem
 Familiarity with Ceres and GTSAM software libraries
 \BulletItem
 Developed a UAV flight simulator in ROS using Python and C++
+
+\Gap
+\Entry
+{\textbf{Sensors}}
+\Gap
+\BulletItem
+Familiarity with IMU sensors (accelerometers, gyroscopes, and magnetometers)
+\BulletItem
+Image processing and calibration for RGB/RGB-D cameras
+\BulletItem
+Airspeed Sensors and pressure altimeters
+\BulletItem
+GNSS receivers and signals
 
 \Gap
 \Entry{\textbf{Control and Path Planning}}
@@ -431,6 +397,8 @@ Created a  mobile robotic arm with an Arduino and Raspberry Pi
 \textit{Direct Relative Edge Optimization, a Robust Alternative for Pose Graph Optimization}, IEEE Robotics and Automation Letters, 2019
 \BulletItem \textit{Group-$k$ Consistent Measurement Set Maximization for Robust Outlier Detection}, IEEE IROS 2022
 \BulletItem \textit{Incremental cycle bases for cycle-based pose graph optimization}, IEEE Robotics and Automation Letters, 2023
+\BulletItem \textit{Cooperative Navigation of Autonomous Vehicles in Challenging Environments}, BYU Scholars Archive, 2023
+\BulletItem \textit{Group-$k$ consistent measurement set maximization vis maximum clique over k-uniform hypergraphs for robust multi-robot map merging}, International Journal of Robotics Research, 2024
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
